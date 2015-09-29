@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'makeup-blog',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://elliesmakeupblog.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
